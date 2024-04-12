@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Mesob</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+            
+                <h1>Mesob<span>.</span></h1>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#menu">Restaurants</a></li>
+                    <li class="dropdown"><a href="#"><span>Login</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="user_login.html">User Login</a></li>
+                            <li><a href="admin_login.html">Restaurant Login</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+            <!-- .navbar -->
+
+            <a class="btn-book-a-table" href="rest_signin.html">Add Restaurant</a>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main>
+    <!-- ======= HERO SECTION ======= -->
+        <section id="hero" class="hero d-flex align-items-center section-bg">
+            <div class="container">
+                <div class="row justify-content-between gy-5">
+                    <div
+                        class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                        <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
+                        <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea
+                            consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                        <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <a href="rest_signin.html" class="btn-book-a-table">Add Restaurant</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+                        <img src="./assets/img/mesob-removebg-preview.jpg" class="img-fluid" alt="" data-aos="zoom-out"
+                            data-aos-delay="300">
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- ======= END HERO ======= -->
+
+    <!-- ======= MENU SECTION ====== -->
+        <section id="menu" class="menu">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>Restaurant List</h2>
+                    <p>Check Out Our <span>Restaurants</span></p>
+                </div>
+
+                <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+                    <li class="nav-item">
+                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#all">
+                            <h4>All</h4>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#cafe">
+                            <h4>Cafe</h4>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " data-bs-toggle="tab" data-bs-target="#coffee-shop">
+                            <h4>Coffee Shops</h4>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " data-bs-toggle="tab" data-bs-target="#restaurants">
+                            <h4>Restaurants</h4>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+                    <div class="tab-pane fade active show" id="all">
+
+                        <div class="tab-header text-center">
+                            <p>Cafe and Restaurants</p>
+                            <h3>All</h3>
+                        </div>
+
+                        <div class="row gy-5">
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img/gallery/gallery-5.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-5.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img/gallery/gallery-5.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-5.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img/gallery/gallery-5.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-5.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img/gallery/gallery-5.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-5.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                        </div>
+                    </div>    
+
+                    <div class="tab-pane fade" id="cafe">
+
+                        <div class="tab-header text-center">
+                            <p>Cafe and Restaurants</p>
+                            <h3>Cafe</h3>
+                        </div>
+
+                        <div class="row gy-5">
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img/gallery/gallery-5.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-1.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img/gallery/gallery-1.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-1.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img/gallery/gallery-1.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-1.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img/gallery/gallery-1.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-1.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="coffee-shop">
+                        <div class="tab-header text-center">
+                            <p>Cafe and Restaurants</p>
+                            <h3>Coffee Shops</h3>
+                        </div>
+
+                        <div class="row gy-5">
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-2.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-2.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-2.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-2.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-2.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-2.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-2.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-2.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-2.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-2.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-2.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-2.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="restaurants">
+                        <div class="tab-header text-center">
+                            <p>Cafe and Restaurants</p>
+                            <h3>Restaurants</h3>
+                        </div>
+
+                        <div class="row gy-5">
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-3.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-3.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-3.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-3.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-3.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-3.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-3.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-3.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-3.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-3.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+
+                            <div class="col-lg-4 menu-item">
+                                <a href="assets/img//gallery/gallery-2.jpg" class="glilghtbox"><img
+                                        src="assets/img/gallery/gallery-2.jpg" alt="" class="menu-img img-fluid"></a>
+                                <h4>Lorem ipsum</h4>
+                                <p class="ingredients">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <a class="btn-book-a-table" href="./php/rest.php">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    <!-- ======= END MENU ======= -->
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Mesob</span></strong>. All Rights Reserved
+            </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

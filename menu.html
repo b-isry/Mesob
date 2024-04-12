@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mesob</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Mesob<span>.</span></h1>
+      </a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Restaurant Registration</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rest_signin.html">Restaurant Registration</a></li>
+            <li>Add Menu</li>
+          </ol>
+        </div>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <section class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2>Register</h2>
+            <p>Add <span>Your </span> Menu</p>
+          </div>
+
+        <div class="row g-0">
+            <div class="col-lg-4 reservation-img aos-init aos-animate" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200">
+            </div>
+            <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+                <form action="./php/rest_signin.php" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row gy-4">
+                      <div class="col-lg-4 col-md-6">
+                        <input type="text" name="Fname" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                        <div class="validate"></div>
+                      </div>
+                      <!-- <div class="col-lg-4 col-md-6">
+                        <input type="image" class="form-control" name="image" id="image" placeholder="Add image">
+                        <div class="validate"></div>
+                      </div> -->
+                      <div class="col-lg-4 col-md-6">
+                        <input type="number" class="form-control" name="price" id="price" placeholder="Price" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                        <div class="validate"></div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <select name="type" id="Ftype" class="form-control" data-msg="Please select one" required>
+                            <option value="" placeholder>Select the type of your dish</option>
+                            <option value="Appetizer">Appetizer</option>
+                            <option value="Main Course">Main Course</option>
+                            <option value="Dessert">Dessert</option>
+                            <option value="Drinks">Drinks</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group my-3">
+                      <textarea class="form-control" name="description" rows="5" placeholder="Description"></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Registered successfuly!</div>
+                      </div>
+                    <button type="submit" name="add" class="text-center btn-book-a-table">Add Dish</button>
+                    <button type="submit" name="submit" class="text-center btn-book-a-table">Register</button>
+                  </form>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Mesob</span></strong>. All Rights Reserved
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
